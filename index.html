@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CountThatCalorie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsivephn.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&family=Merienda&family=Pacifico&family=Sevillana&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&family=Merienda&family=Pacifico&family=Roboto:wght@300&family=Sevillana&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <div id="logo">CountThatCalorie</div>
+
+      <div id="menu">
+        <a href="index.html"> Home</a>
+
+        <a href="#" id="foods"> Foods</a>
+
+        <a href="#">About us </a>
+
+        <a href="#"> contact us </a>
+      </div>
+    </div>
+
+    <div id="homepage">
+      <!-- quote -->
+      <div class="hello quote">
+        <p id="qline">Lets have a count on what we eat ...</p>
+      </div>
+
+      <!-- start counting button -->
+      <div class="startcountingbtn">
+        <button type="button" id="scbtn">
+          <a href="#searchctn">Start Count</a>
+        </button>
+      </div>
+    </div>
+
+    <div id="searchctn" class="searchcontainer">
+      <div id="heading2"><p>SEARCH TRACK TRANSFORM</p></div>
+      <div class="searchbar" id="srch">
+        <form class="form" onsubmit="getresponse()">
+          <img src="images/magnifying-glass.png" alt="search icon" />
+          <input
+            id="search"
+            type="search"
+            placeholder="Search the food items..."
+            autocomplete="off"
+          />
+        </form>
+      </div>
+
+      <!-- <input type="submit" id="caloriesearchbtn" class="caloriesearchbutton"> SEARCH</input> -->
+      <button type="button" id="caloriesearchbtn" class="caloriesearchbutton">
+        SEARCH
+      </button>
+    </div>
+
+    <!-- response -->
+
+    <div id="result" class="result">
+      <br />
+      <hr />
+
+      <div class="fooditemsearched">
+        <h1 id="fooditemsname"></h1>
+      </div>
+
+      <div id="nutritionval" class="nutritionvalue">
+        <div class="caloricvalue">
+          <div class="cheading">Caloric Value</div>
+          <div id="calorieval" class="cvalue number">0</div>
+        </div>
+
+        <div class="proteinvalue">
+          <div class="pheading">Protein</div>
+          <div id="proteinval" class="pvalue number">0</div>
+        </div>
+
+        <div class="fatvalue">
+          <div class="fheading">Fat</div>
+          <div id="fatval" class="fvalue number">0</div>
+        </div>
+      </div>
+
+      <div class="searchagaindiv">
+        <p>Want to search for another food item?</p>
+
+        <div>
+          <button id="gosearchagain" class="searchagain">SEARCH AGAIN</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
